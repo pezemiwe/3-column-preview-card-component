@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+* {
+    box-sizing: border-box;
+}
+.boxes {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    overflow: visible;
+
+}
+div#one {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(hue, saturation, lightness);
+    width: 300px;
+    height: 500px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+div#two{
+    background-color: hsl(184, 100%, 22%);
+    width: 300px;
+    height: 500px;
+}
+div#three{
+    background-color: hsl(179, 100%, 13%);
+    width: 300px;
+    height: 500px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.svg {
+    margin: 50px 30px 10px 50px;
+}
+.cars {
+    font-family: "Big Shoulders Display";
+    text-align: left;
+    color: hsl(0, 0%, 95%);
+    margin: 20px 30px 30px 50px;
+    font-size: 30px;
+}
+.desc {
+    flex: 1;
+    font-family: "Lexend Deca";
+    text-align: left;
+    color: hsl(0, 0%, 100%, 0.75);
+    margin: 50px;
+    font-size: 15px;
+}
+.but {
+    height: 33px;
+    width: 100px;
+    border: none;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 95%);
+    margin: 50px;
+    font-size: 12px;
+}
+button#butl {
+    color: hsl(31, 77%, 52%);
+}
+button#butm {
+    color: hsl(184, 100%, 22%);
+}
+button#butn {
+    color: hsl(179, 100%, 13%);
+}
+button#butl:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+button#butm:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+button#butn:hover {
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+@media screen and (max-width: 460px) {
+    .boxes {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        overflow: auto;
+    }
+    div#one {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    div#three {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
